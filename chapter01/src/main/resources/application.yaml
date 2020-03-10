@@ -1,0 +1,34 @@
+#当value值为普通数据类型的配置
+#server:
+#  port: 8083
+#  servlet:
+#    context-path: /hello
+
+#当value值为数组或单列集合是的配置
+hobby:
+  - play
+  - reading
+  - sleep
+
+#方式2
+hobby1: [play,reading,sleep]
+
+#当value值为map的时候配置
+map:
+  k1: v1
+  k2: v2
+
+#方式2
+map1: {k1: v1,k2: v2}
+
+#对实体类对象person进行配置
+person:
+  id: 2
+  name: lisi
+  hobby: [sing,reading,sleep]
+  family: [father,mother]
+  map: {k1: v1,k2: v2}
+  pet: {type: cat, name: tom}
+
+user:
+  email: zhangsan@163.com
